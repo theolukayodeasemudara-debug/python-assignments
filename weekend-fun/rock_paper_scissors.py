@@ -1,0 +1,32 @@
+#  Ask Player 1 for choice
+#  Ask Player 2 for choice
+#  If both choices are same -> Tie
+#  Use nested if statements to determine winner
+#  Print the result
+
+player1 = input("Player 1 (rock/paper/scissors): ")
+player2 = input("Player 2 (rock/paper/scissors): ")
+
+if player1 == player2:
+    print("Tie")
+else:
+    if player1 == "rock":
+        if player2 == "scissors":
+            print("Player 1 wins")
+        else:
+            print("Player 2 wins")
+
+    elif player1 == "paper":
+        if player2 == "rock":
+            print("Player 1 wins")
+        else:
+            print("Player 2 wins")
+
+    elif player1 == "scissors":
+        if player2 == "paper":
+            print("Player 1 wins")
+        else:
+            print("Player 2 wins")
+
+    else:
+        print("Invalid input")
