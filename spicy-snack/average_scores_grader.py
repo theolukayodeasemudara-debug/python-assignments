@@ -3,14 +3,24 @@
 # find the average of the three scores collected
 # check if score is less than different threshold then return a letter grade
 
-for i in range(3):
-    score = int(input("enter your score: "))
-    
-def average_score(num1, num2, num3):
-    return (num1+num2+num3)/3
-    
-    
-print(average_score(score[i]))
+score1 = float(input("Enter first score: "))
+score2 = float(input("Enter second score: "))
+score3 = float(input("Enter third score: "))
 
-# if average_score >= 90 and score <= 100:
-#     print("A")
+average = (score1 + score2 + score3) / 3
+
+if average >= 90:
+    grade = 'A'
+elif average >= 80:
+    grade = 'B'
+elif average >= 70:
+    grade = 'C'
+elif average >= 60:
+    grade = 'D'
+else:
+    grade = 'F'
+
+print("Average Score:", average, "Grade: ", grade)
+
+
+
