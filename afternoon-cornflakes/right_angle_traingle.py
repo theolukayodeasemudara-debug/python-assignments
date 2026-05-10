@@ -1,5 +1,5 @@
 number = int(input("Enter a number: "))
-for i in range(1,number + 1):
-        for j in range (i):
+for row in range(1,number + 1):
+        for column in range (row):
             print("*", end= " ")
         print()
