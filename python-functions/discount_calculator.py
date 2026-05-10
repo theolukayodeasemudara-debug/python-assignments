@@ -14,11 +14,13 @@ def ten_off_discount(item_name):
     return discount
     
 def fifty_off_discount(item_name):
-    discount = item_name * 10/50
+    discount = item_name * 50/100
     return discount
     
 if promo_code == "SAVE10":
-    print(f"Discount applied, you'll pay: {item_price - ten_off_discount(item_price)}")
+    converted = item_price - ten_off_discount(item_price)
+    print(f"Discount applied, you'll pay: {converted:.2f}")
 elif promo_code == "HALFOFF":
-    print(f"Discount applied, you'll pay: {item_price - fifty_off_discount(item_price)}")
+    converted = item_price - fifty_off_discount(item_price)
+    print(f"Discount applied, you'll pay: {converted:.2f}")
 else: print("no discount applied")

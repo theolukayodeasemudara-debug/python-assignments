@@ -9,6 +9,11 @@ class Discount_Calculator_App(TestCase):
         self.assertTrue(callable(fifty_off_discount))
         
     def test_that_ten_off_function_calculates_at_ten_percent(self):
-        actual = ten_off_discount(200000)
-        expected = 18000
+        actual = ten_off_discount(20000)
+        expected = 18000.0
+        self.assertAlmostEqual(actual, expected)
+        
+    def test_that_ten_off_function_calculates_at_ten_percent(self):
+        actual = fifty_off_discount(20000)
+        expected = 10000
         self.assertAlmostEqual(actual, expected)
