@@ -33,10 +33,11 @@ if unit == "f":
 elif unit == "c":
     converted = fah_converter(number)
     if converted < fahrenheit_threshold:
-        print(f"{converted}F - Cold advisory")
+        print(f"{converted:.2f}F - Cold advisory")
     else:
-        print(f"{converted}F - Heat alert")
-else: print("invalid temperature value")
+        print(f"{converted:.2f}F - Heat alert")
+else: 
+    print("invalid temperature value")
 
 
 
