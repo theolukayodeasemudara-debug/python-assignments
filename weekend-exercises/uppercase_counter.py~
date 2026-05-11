@@ -1,0 +1,12 @@
+# count how many upper-case letters are in a string
+
+string = input("enter a string: ")
+counter_uppercase = 0
+
+for char in string:
+    if char.isUpper():
+        counter_uppercase += 1
+
+print(counter_uppercase)
+
+    

@@ -1,4 +1,4 @@
-# print the divisors of a given number
+Find the sum of all even digits in a number.
 
 num = int(input("enter a given number: "))
 
