@@ -1,8 +1,0 @@
-from unittest TestCase
-
-from palindrome_checker import *
-
-class Palindrome_Palindrome_App(TestCase):
-    
-    def check_that_function_exists(self):
-        self.assertTrue(callable(palindrome_checker))

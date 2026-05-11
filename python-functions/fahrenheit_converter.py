@@ -12,7 +12,6 @@ temp = input("enter a temperature value: ").lower()
 
 unit = temp[-1]
 number = int(temp[:-1])
-# print(unit, number)
 
 def fah_converter(number):
     fahrenheit = (number * 9/5) + 32
