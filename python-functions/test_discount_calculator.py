@@ -12,7 +12,7 @@ class Discount_Calculator_App(TestCase):
         actual = discount_calculator.ten_off_discount(20000)
         expected = 2000.00
         self.assertAlmostEqual(actual, expected, places = 2)
-        
+        e
     def test_that_ten_off_function_calculates_at_50_percent(self):
         actual = discount_calculator.fifty_off_discount(20000)
         expected = 10000
